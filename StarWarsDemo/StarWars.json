@@ -144,18 +144,6 @@
     "imagen": "macewindu"
   },
   {
-    "nombre": "Padmé Amidala",
-    "raza": "Humano",
-    "descripcion": "Reina y luego senadora de Naboo, madre de Luke Skywalker y Leia Organa.",
-    "planeta_origen": "Naboo",
-    "epoca": "Era de la República Galáctica",
-    "afiliacion": "República Galáctica",
-    "habilidades": "Diplomacia, liderazgo",
-    "armas": "Blaster pequeño",
-    "id": 6927,
-    "imagen": "padméamidala"
-  },
-  {
     "nombre": "Qui-Gon Jinn",
     "raza": "Humano",
     "descripcion": "Maestro Jedi que descubrió a Anakin Skywalker y creyó en su potencial como el Elegido.",
