@@ -1,16 +1,8 @@
 //
 //  StarCardView.swift
-//  StarWarsDemo
-//
-//  Created by Julio César Fernández Muñoz on 3/9/24.
-//
-
-
-//
-//  StarCardView.swift
 //  StarWarsCards
 //
-//  Created by Julio César Fernández Muñoz on 3/9/24.
+//   Created by Carlos Caño on 7/1/25.
 //
 import SwiftUI
 
@@ -38,5 +30,5 @@ struct StarCardView: View {
 }
 
 #Preview {
-    StarCardView(card: .test)
+    StarCardView(card: .test) // cargamos ya una instancia de una variable llamada 'test' definida en en 'Model.swift' donde la variable es una una extension StarCard 
 }
