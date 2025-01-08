@@ -1,5 +1,5 @@
 
-### CRÉDITOS A Apple Coding Academy: https://github.com/applecodingacademy (La única academia de formación especializada en iOS y Swift en España)
+### CRÉDITOS A Apple Coding Academy: https://github.com/applecodingacademy (la única academia de formación especializada en iOS y Swift en España)
 ## EXPLICACIÓN POR MI DEL PROYECTO
 ## App en Swift y SwiftUI: Clean Architecture + MVVM + Swift Testing
 
