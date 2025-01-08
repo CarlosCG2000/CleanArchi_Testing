@@ -1,5 +1,6 @@
 
-# EXPLICACIÓN PROYECTO
+# CRÉDITOS A Apple Coding Academy: https://github.com/applecodingacademy (La única academia de formación especializada en iOS y Swift en España)
+## EXPLICACIÓN POR MI DEL PROYECTO
 ## App en Swift y SwiftUI: Clean Architecture + MVVM + Swift Testing
 
 Dos cosas muy diferentes una es como funciona el framework y otra mmuy distinta es como monto una arquitectura.
@@ -47,7 +48,7 @@ Se llamaria al `StarCardVM.swift` y de hay se obtendrian los datos para mostrarl
 6. Le damos a la primera carpeta principal de todas `StarWarsDemo` (el cual es el ejecutable de nuestra aplicación) y hay vemos que es un 'Target', lo que vamos a hacer es crear otro 'Target' que va a ser dentro de 'iOS' un 'Unit Testing Bundle' para hacer testing llamado: `StarWarsDemoTest`.
 Aqui esta el testing de la aplicación.
 
-# 🚀 README DEL PROYECTO (del youtuber)
+## 🚀 README DEL PROYECTO (de Apple Coding Academy)
 VIDEO: `https://www.youtube.com/watch?v=4JlSxaIWRJ0`
 
 La aplicación, desarrollada con **Swift** y **SwiftUI**, explora la implementación de una arquitectura **Clean Architecture** basada en el patrón **MVVM** (Model-View-ViewModel).
