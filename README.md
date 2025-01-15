@@ -3,39 +3,45 @@
 ## EXPLICACIÓN POR MI DEL PROYECTO
 ## App en Swift y SwiftUI: Clean Architecture + MVVM + Swift Testing
 
-Dos cosas muy diferentes una es como funciona el framework y otra muy distinta es como monto una arquitectura.
+Dos cosas muy diferentes una es como funciona el `framework` y otra muy distinta es como monto una `arquitectura`.
 
-Una arquitectura es la forma en la que vas a organizar la aplicación para que sea escalable, sostenible y mantenible en el tiempo.
-- Escalable: hoy en día se deben actualizar las Apps con nuevos requistos de los usuarios, arreglo de bugs, ... ya no existe el termino de software terminado.
+Una `arquitectura` es la forma en la que vas a `organizar la aplicación` para que sea `escalable`, `sostenible` y `mantenible en el tiempo`.
+- Escalable: hoy en día se deben actualizar las Apps con nuevos requisitos de los usuarios, arreglo de bugs,... ya no existe el termino de software terminado.
 
-Tener en cuenta que Swift es un lenguaje orientado a protocolos, se basa siempre en contratos que tu le dices al sistema que tiene que cumplir e incluso puede llegar a incorporar ciertas funcionalidades concretas.
+Tener en cuenta que `Swift` es un lenguaje orientado a `protocolos`, se basa siempre en `contratos` que tu le dices al sistema que tiene que `cumplir` e incluso puede llegar a incorporar ciertas funcionalidades concretas.
 
-SwiftUI tiene dos formas de funcionar:
-- Hasta iOS 16: Observable Object.
-Concepto de MVVM pero adaptado a Apple (su propia versión). Se cogen los eventos y se traspasaban de un lado a otro, es decir, por un lado tengo la parte del código que me da la funcionalidad de la aplicación (lo que seria la lógica de negocio) y por otro lado seria la vista que es lo que ve el usuario. Entonces la conexión entre la lógica de usuario y la vista estaba realizada a través de la librería `Combine` que proporciona los mecanismos para que las vistas reaccionen automáticamente a los cambios en los datos.
+`SwiftUI` tiene dos formas de funcionar:
+- Hasta `iOS 16`: `Observable Object`.
+Concepto de `MVVM` pero adaptado a Apple (su propia versión). Se cogen los `eventos` y se traspasaban de un lado a otro, es decir, por un lado tengo la parte del código que me da la `funcionalidad` de la aplicación (lo que seria la `lógica de negocio`) y por otro lado seria la `vista` que es lo que ve el `usuario`. Entonces la `conexión` entre la lógica de usuario y la vista estaba realizada a través de la librería `Combine` que proporciona los mecanismos para que las vistas reaccionen automáticamente a los cambios en los datos.
 
-- A partir de iOS 17: @Observable.
-Sigue funcionando de la misma manera, es decir que la lógica de negocio informa a la vista para que esta se refreje pero en vez de usar `Combine` empezo a utilizar `Swift Macros` (se añadio en Swift 5.9) que es una forma más moderna y sencilla de gestionar el estado y la reactividad reemplazando parcialmente la necesidad de usar `Combine` para ciertas tareas. Nos permite ampliar la funcionalidad de las aplicaciones y crear un código que esta en parte dinamica y en parte normal como una especie de plantilla.
+- A partir de `iOS 17`: `@Observable`.
+Sigue funcionando de la misma manera, es decir que la `lógica de negocio` informa a la `vista` para que esta se refreje pero en vez de usar `Combine` empezo a utilizar `Swift Macros` (se añadio en Swift 5.9) que es una forma más moderna y sencilla de `gestionar el estado y la reactividad` reemplazando parcialmente la necesidad de usar `Combine` para ciertas tareas. Nos permite ampliar la funcionalidad de las aplicaciones y crear un código que esta en `parte dinámica` y en `parte normal` como una especie de plantilla.
 
-El `MVVM` que se explica en este proyecto respeta como funciona el framework de Apple pero usando conceptos de `Clearn Architecture` que es el tipo de arquitectura que más se adapta a cualquier tipo de comportamento, framework, etc.
+El `MVVM` que se explica en este proyecto respeta como funciona el `framework de Apple` pero usando conceptos de `Clearn Architecture` que es el tipo de `arquitectura` que más se adapta a cualquier tipo de comportamento, framework, etc.
+
+## FICHEROS
 
 Lo primero que se tiene que hacer es generar el Modelo: `Model`, es decir los datos. Una aplicación se crea para gestionar datos, sin datos no hay Apps. El motivo de porque se realiza una aplicación y la fuente son siempre los datos.
 
-Los datos van a venir a través de dos ficheros Json: `StarWars.json` (32 personajes) y `StarWars Test.json` (4 personajes, va a ser el fichero de prueba con al misma estructura que el anterior pero con menos elementos (personajes)). Estos personajes de StarWars además tienen una serie de imagenes que iremos cargando en `Assets`.
+Los datos van a venir a través de dos ficheros `Json`:
+- `StarWars.json` (32 personajes)
+- `StarWars Test.json` (4 personajes, va a ser el fichero de prueba con tiene la misma estructura que `StarWars.json` pero con menos elementos (personajes)).
 
-Obviamente de 32 a 4 elementos no tiene sentido, pero si en un futuro en producción tuvieramos 500, pues ya si lo tendria, pero esto es un ejemplo.
+Estos `personajes de StarWars` además tienen una serie de imagenes que iremos cargando en `Assets`.
 
-Vamos a cargar estos ficheros Json `StarWars.json` en el directorio principal y `StarWars Test.json` dentro de 'Preview Content', aqui es donde voy a poner el contenido de datos de prueba que no quiero que se suba a la App Store.
+Obviamente de 32 a 4 elementos no tiene sentido, pero si en un futuro en `producción` tuvieramos 500, pues ya si lo tendria, pero esto es un ejemplo.
+
+Vamos a cargar estos ficheros json `StarWars.json` en el directorio principal y `StarWars Test.json` dentro de `Preview Content`, aqui es donde voy a poner el contenido de datos de prueba que `no` quiero que se suba a la App Store.
 
 1. Fichero: `ContentView.swift`:
 Este fichero ya existe cuando creas la App. Aqui se explica que es un protocolo y lo que conlleva esto.
 
 2. Creación del fichero: `Model.swift`
 Es donde se va a definir la estructura de la información (json en este caso, podria ser en otro caso de una Api, BD...).
-Creamos el DTO 'StarCardDTO' con la estructura igual al json, la presentación 'StarCard' con la estructura que queremos utilizar en la app, y la extensión para transformar de manera directa del DTO a la presentación.
+Creamos la instancia de dto `StarCardDTO` con la estructura igual al json (deserialización), la presentación `StarCard` con la estructura que queremos trabajar en la App, y la extensión para transformar de manera directa del `StarCardDTO` a `StarCard`.
 
 3. Creación del fichero: `Repository.swift`
-Es donde vamos a cargar la información, se encarga de la lógica para tener acceso a la persistencia de la información.
+Es donde vamos a `cargar la información`, se encarga de la `lógica` para tener acceso a la `persistencia de la información`.
 Creamos un protocolo, con una extensión, y dos estructuras (una para la producción y otra para el desarrollo).
 
 4. Creación del fichero: `StarCardVM.swift` (View Model)
