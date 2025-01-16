@@ -15,7 +15,9 @@ extension Tag {
 // No son Struct sino Suite los test
 @Suite("Prueba del Repository de Star Cards", .tags(.repository)) // puede haber diferentes elementos como para deshabilitar que este en el ipad, etc. Además del elemento etiqueta que ponemos para decir que es un Suite del repositorio nuestro aplicación el test que estamos realizando
 struct StarWarsDemoTests {
+    
     let repository = RepositoryTest() // 1_cargamos el repositorio
+
     let viewModel = StarCardVM(repository: RepositoryTest()) //2_cargamos el view model
     
     @Test("Prueba de carga de datos del repositorio")

@@ -4,9 +4,11 @@
 //
 //   Created by Carlos Caño on 7/1/25.
 //
+
 import SwiftUI
 
 struct StarCardView: View {
+    
     let card: StarCard
     
     var body: some View {
@@ -30,5 +32,5 @@ struct StarCardView: View {
 }
 
 #Preview {
-    StarCardView(card: .test) // cargamos ya una instancia de una variable llamada 'test' definida en en 'Model.swift' donde la variable es una una extension StarCard 
+    StarCardView(card: .test) // cargamos ya una instancia de una variable llamada 'test' definida en en 'Model.swift' donde la variable es una una extensión StarCard
 }

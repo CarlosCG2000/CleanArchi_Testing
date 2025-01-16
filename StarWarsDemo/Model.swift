@@ -44,7 +44,7 @@ extension StarCardDTO {
     }
 }
 
-// 2_Igual que el 'StarCardDTO', pero con la estructura que queremos utilizar en la app (pasando de String a [String] los campos: afiliacion habilidades, armas y tampoco tiene el protocolo es Codable sino los protocolos Identifiable, Hashable
+// 2_Igual que el 'StarCardDTO', pero con la estructura que queremos utilizar en la app (pasando de String a [String] los campos: afiliacion, habilidades, armas y tampoco tiene el protocolo es Codable sino los protocolos Identifiable, Hashable
 // Protocolo 'Identifiable': va a tener un campo 'id' que sera igualable, es decir único.
 // Protocolo 'Hashable': permite tener un valor de hash, un valor de comprobación único. Cuando en todas sus estancias sean iguales es cuando se va a poder comparar por igualdad. Es decir pueden ser dos instancias diferentes pero si tienen todos los mismos valores los compararía como iguales.
 struct StarCard: Identifiable, Hashable {

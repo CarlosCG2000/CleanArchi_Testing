@@ -11,13 +11,14 @@ import SwiftUI
 // Es un acuerdo que tiene el Struct con el Protocolo (View) que para cumplirlo tiene que tener ciertos componentes de manera obligatoria, en este caso el 'var body: some View { }'
 struct ContentView: View {
     
-    @State var vm = StarCardVM() // 3_ @State: indica al sistema que cuando cambie ciertas propiedades provocara que la vista se actualice. En este caso el observable StarCardVM() el cual tiene la variable cards en el momento que esta cmabie automaticamente refrescara la pantalla y lo cambiara
+    @State var vm = StarCardVM() // 3_ @State: indica al sistema que cuando cambie ciertas propiedades provocara que la vista se actualice. En este caso el observable StarCardVM() el cual tiene la variable cards en el momento que esta cambie automaticamente refrescará la pantalla y lo cambiará
     
-    // @State var vm = StarCardVM(repository: Repository()) // seria lo mismo que lo puesto arriba, ya que es por defecto el parámetro Repository()
+    // @State var vm = StarCardVM(repository: Repository()) // seria lo mismo que lo puesto arriba, ya que Repository es por defecto el parámetro Repository()
     
     // @State var vm = StarCardVM(repository: RepositoryTest()) // seria si quiero en producción solo mostrar los datos de desarrollo (algo sin sentido porque si acaso esto tendria que ponerse en la Preview() y no en el simulador)
     
     var body: some View {
+        
         NavigationStack {
             List {
                 ForEach(vm.cards) { card in
@@ -29,7 +30,7 @@ struct ContentView: View {
     }
 }
 
-// 2_Hash Preview, esto lo que hace es dar un contexto en el que creo la instancia de 'ContentView' para que se vea en el simulador de la derecha de Xcode.
+// 2_#Preview, esto lo que hace es dar un contexto en el que creo la instancia de 'ContentView' para que se vea en el simulador de la derecha de Xcode.
 #Preview {
 
     ContentView(vm: StarCardVM(repository: RepositoryTest())) // Test, muestra el json de test, con sus datos

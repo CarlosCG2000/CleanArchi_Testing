@@ -42,18 +42,18 @@ Creamos la instancia de dto `StarCardDTO` con la estructura igual al json (deser
 
 3. Creación del fichero: `Repository.swift`
 Es donde vamos a `cargar la información`, se encarga de la `lógica` para tener acceso a la `persistencia de la información`.
-Creamos un protocolo, con una extensión, y dos estructuras (una para la producción y otra para el desarrollo).
+Creamos un `protocolo`, con una extensión, y dos estructuras (una para la producción y otra para el desarrollo).
 
 4. Creación del fichero: `StarCardVM.swift` (View Model)
-Se llama al protocolo creado, donde lo interesante es que se llama como un tipo el cual puede recibir cualquiera de los datos que llamen a ese protocolo (tanto la estructura de producción como de desarrollo) y después se hace la comprobación de errores (heredada del Repository) para devolver o no los datos finales del json, donde se pone por defecto la estructura de producción, pero luego en el `ContentView.swift` se puede cambiar facilmente.
+Se llama al `protocolo` creado, donde lo interesante es que se llama como un tipo el cual puede recibir cualquiera de los datos que llamen a ese protocolo (tanto la estructura de `producción` como de `desarrollo`) y después se hace la comprobación de errores (heredada del `Repository`) para devolver o no los datos finales del json, donde se pone por defecto la estructura de producción, pero luego en el `ContentView.swift` se puede cambiar facilmente.
 
 5. Creación del fichero: `StarCardView.swift`
-Es la vista secundaroa que se llama en el `ContentView.swift`, para mostrar cada personaje de StarWars (cada elemento del json).
+Es la vista secundaria que se llama en el `ContentView.swift`, para mostrar cada personaje de StarWars (cada elemento del json).
 
 Volvemos al `ContentView.swift`:
 Se llamaria al `StarCardVM.swift` y de hay se obtendrian los datos para mostrarlos por pantalla, siempre que se quiera se va a poder cambiar el StarCardVM con el parámetro dentro de desarrollo para que devuelva solo dichos datos en vez de los de defecto que son los de producción. Tanto en el simulador como en la Preview.
 
-6. Le damos a la primera carpeta principal de todas `StarWarsDemo` (el cual es el ejecutable de nuestra aplicación) y hay vemos que es un 'Target', lo que vamos a hacer es crear otro 'Target' que al pulsar crear ese nuevo Target donde tendremos que seleccionar 'iOS' y luego un 'Unit Testing Bundle' para hacer el testing llamado: `StarWarsDemoTest`.
+6. Le damos a la primera carpeta principal de todas `StarWarsDemo` (el cual es el ejecutable de nuestra aplicación) y hay vemos que es un `Target`, lo que vamos a hacer es crear otro `Target` que al pulsar crear ese nuevo `Target` donde tendremos que seleccionar `iOS` y luego un `Unit Testing Bundle` para hacer el testing llamado: `StarWarsDemoTest`.
 Aqui esta el testing de la aplicación.
 
 ## 🚀 README DEL PROYECTO (de Apple Coding Academy)
