@@ -15,7 +15,9 @@ final class StarCardVM {
     
     // 4_Creamos el inicializador que ponemos que por defecto reciba Repository() (producción) pero se va a poder cambiar en la vista donde se invoca (ContentView.swift) por el de RepositoryTest (desarrollo) de manera muy sencilla y escalable.
     init(repository: DataRepository = Repository()) { // definimos 'repository' si por defecto debe estar en producción (Repository) o test (RepositoryTest)
+        
         self.repository = repository // asignamos el valor de 'repository' que hemos pasado por parámetro
+        
         //Aqui es donde se hay el do - try - cacth elevado del getData() en el fichero 'Repository.swift' que solo hicimos el try (la forma dos)
         do { // entramos siempre
             cards = try repository.getData() // operación getData()
