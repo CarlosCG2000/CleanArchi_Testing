@@ -18,13 +18,13 @@
 
 /* Begin PBXFileReference section */
 		4BE0C1BF2C87839000AFC3B1 /* CleanArchiMVVMTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchiMVVMTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchiMVVMTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchiMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVMTesting */ = {
+		4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVM */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CleanArchiMVVMTesting;
+			path = CleanArchiMVVM;
 			sourceTree = "<group>";
 		};
 		4BE0C1E42C879FBF00AFC3B1 /* CleanArchiMVVMTests */ = {
@@ -55,7 +55,7 @@
 		4BE0C1B62C87839000AFC3B1 = {
 			isa = PBXGroup;
 			children = (
-				4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVMTesting */,
+				4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVM */,
 				4BE0C1E42C879FBF00AFC3B1 /* CleanArchiMVVMTests */,
 				4BE0C1C02C87839000AFC3B1 /* Products */,
 			);
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				4BE0C1BF2C87839000AFC3B1 /* CleanArchiMVVMTesting.app */,
-				4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests.xctest */,
+				4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVMTesting */ = {
+		4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BE0C1CD2C87839200AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTesting" */;
+			buildConfigurationList = 4BE0C1CD2C87839200AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVM" */;
 			buildPhases = (
 				4BE0C1BB2C87839000AFC3B1 /* Sources */,
 				4BE0C1BC2C87839000AFC3B1 /* Frameworks */,
@@ -86,18 +86,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVMTesting */,
+				4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVM */,
 			);
-			name = CleanArchiMVVMTesting;
+			name = CleanArchiMVVM;
 			packageProductDependencies = (
 			);
 			productName = StarWarsDemo;
 			productReference = 4BE0C1BF2C87839000AFC3B1 /* CleanArchiMVVMTesting.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4BE0C1E22C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests */ = {
+		4BE0C1E22C879FBF00AFC3B1 /* CleanArchiMVVMTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BE0C1E92C879FBF00AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTestingTests" */;
+			buildConfigurationList = 4BE0C1E92C879FBF00AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTests" */;
 			buildPhases = (
 				4BE0C1DF2C879FBF00AFC3B1 /* Sources */,
 				4BE0C1E02C879FBF00AFC3B1 /* Frameworks */,
@@ -111,11 +111,11 @@
 			fileSystemSynchronizedGroups = (
 				4BE0C1E42C879FBF00AFC3B1 /* CleanArchiMVVMTests */,
 			);
-			name = CleanArchiMVVMTestingTests;
+			name = CleanArchiMVVMTests;
 			packageProductDependencies = (
 			);
 			productName = StarWarsDemoTests;
-			productReference = 4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests.xctest */;
+			productReference = 4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -151,8 +151,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVMTesting */,
-				4BE0C1E22C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests */,
+				4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVM */,
+				4BE0C1E22C879FBF00AFC3B1 /* CleanArchiMVVMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +194,7 @@
 /* Begin PBXTargetDependency section */
 		4BE0C1E82C879FBF00AFC3B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVMTesting */;
+			target = 4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVM */;
 			targetProxy = 4BE0C1E72C879FBF00AFC3B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -326,7 +326,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CleanArchiMVVMTesting/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CleanArchiMVVM/Preview Content\"";
 				DEVELOPMENT_TEAM = WAY42LFGL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -355,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CleanArchiMVVMTesting/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CleanArchiMVVM/Preview Content\"";
 				DEVELOPMENT_TEAM = WAY42LFGL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -425,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BE0C1CD2C87839200AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTesting" */ = {
+		4BE0C1CD2C87839200AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BE0C1CE2C87839200AFC3B1 /* Debug */,
@@ -434,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BE0C1E92C879FBF00AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTestingTests" */ = {
+		4BE0C1E92C879FBF00AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BE0C1EA2C879FBF00AFC3B1 /* Debug */,

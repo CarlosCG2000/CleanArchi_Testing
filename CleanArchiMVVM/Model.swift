@@ -28,7 +28,7 @@ struct StarCardDTO: Codable {
 // Es una extensión de `struct StarCardDTO` (por lo que se podria poner en un fichero aparte)
 // Todo lo que se ponga aquí es algo que se va a incluir a lo que se tiene en el `struct StarCardDTO`
 extension StarCardDTO {
-//  toCard: es una propiedad calculada, que no almacena valores sino que cada vez que se la llama devuelve algo que calcula o transforma en tiempo real (como un patrón setter - getter en Java)
+    //  toCard: es una propiedad calculada, que no almacena valores sino que cada vez que se la llama devuelve algo que calcula o transforma en tiempo real (como un patrón setter - getter en Java) Por defecto se hace un get { }, pero tambien se pueden hacer set { } con un nuevo valor (newValue)
     var toCard: StarCard {
         StarCard(id: id,
                  nombre: nombre,
@@ -41,6 +41,14 @@ extension StarCardDTO {
                  habilidades: habilidades.components(separatedBy: ", ").map(\.capitalized), // *
                  armas: armas.components(separatedBy: ", ").map(\.capitalized), // *
                  imagen: imagen)
+        /**
+         get {
+            return
+         }
+         set {
+            // hacer algo con el set, normalmento con newValue
+         }
+         */
     }
 }
 
