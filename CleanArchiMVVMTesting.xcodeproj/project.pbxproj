@@ -17,19 +17,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4BE0C1BF2C87839000AFC3B1 /* StarWarsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BE0C1E32C879FBF00AFC3B1 /* StarWarsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE0C1BF2C87839000AFC3B1 /* CleanArchiMVVMTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchiMVVMTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchiMVVMTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4BE0C1C12C87839000AFC3B1 /* StarWarsDemo */ = {
+		4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVMTesting */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StarWarsDemo;
+			path = CleanArchiMVVMTesting;
 			sourceTree = "<group>";
 		};
-		4BE0C1E42C879FBF00AFC3B1 /* StarWarsDemoTests */ = {
+		4BE0C1E42C879FBF00AFC3B1 /* CleanArchiMVVMTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StarWarsDemoTests;
+			path = CleanArchiMVVMTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,8 +55,8 @@
 		4BE0C1B62C87839000AFC3B1 = {
 			isa = PBXGroup;
 			children = (
-				4BE0C1C12C87839000AFC3B1 /* StarWarsDemo */,
-				4BE0C1E42C879FBF00AFC3B1 /* StarWarsDemoTests */,
+				4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVMTesting */,
+				4BE0C1E42C879FBF00AFC3B1 /* CleanArchiMVVMTests */,
 				4BE0C1C02C87839000AFC3B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,8 +64,8 @@
 		4BE0C1C02C87839000AFC3B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BE0C1BF2C87839000AFC3B1 /* StarWarsDemo.app */,
-				4BE0C1E32C879FBF00AFC3B1 /* StarWarsDemoTests.xctest */,
+				4BE0C1BF2C87839000AFC3B1 /* CleanArchiMVVMTesting.app */,
+				4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4BE0C1BE2C87839000AFC3B1 /* StarWarsDemo */ = {
+		4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVMTesting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BE0C1CD2C87839200AFC3B1 /* Build configuration list for PBXNativeTarget "StarWarsDemo" */;
+			buildConfigurationList = 4BE0C1CD2C87839200AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTesting" */;
 			buildPhases = (
 				4BE0C1BB2C87839000AFC3B1 /* Sources */,
 				4BE0C1BC2C87839000AFC3B1 /* Frameworks */,
@@ -86,18 +86,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4BE0C1C12C87839000AFC3B1 /* StarWarsDemo */,
+				4BE0C1C12C87839000AFC3B1 /* CleanArchiMVVMTesting */,
 			);
-			name = StarWarsDemo;
+			name = CleanArchiMVVMTesting;
 			packageProductDependencies = (
 			);
 			productName = StarWarsDemo;
-			productReference = 4BE0C1BF2C87839000AFC3B1 /* StarWarsDemo.app */;
+			productReference = 4BE0C1BF2C87839000AFC3B1 /* CleanArchiMVVMTesting.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4BE0C1E22C879FBF00AFC3B1 /* StarWarsDemoTests */ = {
+		4BE0C1E22C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BE0C1E92C879FBF00AFC3B1 /* Build configuration list for PBXNativeTarget "StarWarsDemoTests" */;
+			buildConfigurationList = 4BE0C1E92C879FBF00AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTestingTests" */;
 			buildPhases = (
 				4BE0C1DF2C879FBF00AFC3B1 /* Sources */,
 				4BE0C1E02C879FBF00AFC3B1 /* Frameworks */,
@@ -109,13 +109,13 @@
 				4BE0C1E82C879FBF00AFC3B1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				4BE0C1E42C879FBF00AFC3B1 /* StarWarsDemoTests */,
+				4BE0C1E42C879FBF00AFC3B1 /* CleanArchiMVVMTests */,
 			);
-			name = StarWarsDemoTests;
+			name = CleanArchiMVVMTestingTests;
 			packageProductDependencies = (
 			);
 			productName = StarWarsDemoTests;
-			productReference = 4BE0C1E32C879FBF00AFC3B1 /* StarWarsDemoTests.xctest */;
+			productReference = 4BE0C1E32C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4BE0C1BA2C87839000AFC3B1 /* Build configuration list for PBXProject "StarWarsDemo" */;
+			buildConfigurationList = 4BE0C1BA2C87839000AFC3B1 /* Build configuration list for PBXProject "CleanArchiMVVMTesting" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -151,8 +151,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BE0C1BE2C87839000AFC3B1 /* StarWarsDemo */,
-				4BE0C1E22C879FBF00AFC3B1 /* StarWarsDemoTests */,
+				4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVMTesting */,
+				4BE0C1E22C879FBF00AFC3B1 /* CleanArchiMVVMTestingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +194,7 @@
 /* Begin PBXTargetDependency section */
 		4BE0C1E82C879FBF00AFC3B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BE0C1BE2C87839000AFC3B1 /* StarWarsDemo */;
+			target = 4BE0C1BE2C87839000AFC3B1 /* CleanArchiMVVMTesting */;
 			targetProxy = 4BE0C1E72C879FBF00AFC3B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -326,7 +326,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StarWarsDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CleanArchiMVVMTesting/Preview Content\"";
 				DEVELOPMENT_TEAM = WAY42LFGL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -340,8 +340,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.carloscg.StarWarsDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carloscg.CleanArchiMVVMTesting;
+				PRODUCT_NAME = CleanArchiMVVMTesting;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StarWarsDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CleanArchiMVVMTesting/Preview Content\"";
 				DEVELOPMENT_TEAM = WAY42LFGL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -369,8 +369,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.carloscg.StarWarsDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carloscg.CleanArchiMVVMTesting;
+				PRODUCT_NAME = CleanArchiMVVMTesting;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,7 +391,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarWarsDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchiMVVMTesting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanArchiMVVMTesting";
 			};
 			name = Debug;
 		};
@@ -409,14 +409,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarWarsDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchiMVVMTesting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanArchiMVVMTesting";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BE0C1BA2C87839000AFC3B1 /* Build configuration list for PBXProject "StarWarsDemo" */ = {
+		4BE0C1BA2C87839000AFC3B1 /* Build configuration list for PBXProject "CleanArchiMVVMTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BE0C1CB2C87839200AFC3B1 /* Debug */,
@@ -425,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BE0C1CD2C87839200AFC3B1 /* Build configuration list for PBXNativeTarget "StarWarsDemo" */ = {
+		4BE0C1CD2C87839200AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BE0C1CE2C87839200AFC3B1 /* Debug */,
@@ -434,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BE0C1E92C879FBF00AFC3B1 /* Build configuration list for PBXNativeTarget "StarWarsDemoTests" */ = {
+		4BE0C1E92C879FBF00AFC3B1 /* Build configuration list for PBXNativeTarget "CleanArchiMVVMTestingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BE0C1EA2C879FBF00AFC3B1 /* Debug */,
