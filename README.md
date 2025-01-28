@@ -6,7 +6,7 @@
 Dos cosas muy diferentes una es como funciona el `framework` y otra muy distinta es como monto una `arquitectura`.
 
 Una `arquitectura` es la forma en la que vas a `organizar la aplicación` para que sea `escalable`, `sostenible` y `mantenible en el tiempo`.
-- Escalable: hoy en día se deben actualizar las Apps con nuevos requisitos de los usuarios, arreglo de bugs,... ya no existe el termino de software terminado.
+- Escalable: hoy en día se deben actualizar las Apps con nuevos requisitos de los usuarios, arreglo de bugs, ... ya no existe el termino de software terminado.
 
 Tener en cuenta que `Swift` es un lenguaje orientado a `protocolos`, se basa siempre en `contratos` que tu le dices al sistema que tiene que `cumplir` e incluso puede llegar a incorporar ciertas funcionalidades concretas.
 
@@ -25,9 +25,9 @@ Lo primero que se tiene que hacer es generar el Modelo: `Model`, es decir los da
 
 Los datos van a venir a través de dos ficheros `Json`:
 - `StarWars.json` (32 personajes)
-- `StarWars Test.json` (4 personajes, va a ser el fichero de prueba con tiene la misma estructura que `StarWars.json` pero con menos elementos (personajes)).
+- `StarWars Test.json` (4 personajes, va a ser el fichero de prueba que contiene la misma estructura que `StarWars.json` pero con menos elementos (personajes)).
 
-Estos `personajes de StarWars` además tienen una serie de imagenes que iremos cargando en `Assets`.
+Estos `personajes de StarWars` además tienen una serie de imágenes que iremos cargando en `Assets`.
 
 Obviamente de 32 a 4 elementos no tiene sentido, pero si en un futuro en `producción` tuvieramos 500, pues ya si lo tendria, pero esto es un ejemplo.
 
@@ -51,7 +51,7 @@ Se llama al `protocolo` creado, donde lo interesante es que se llama como un tip
 Es la vista secundaria que se llama en el `ContentView.swift`, para mostrar cada personaje de StarWars (cada elemento del json).
 
 Volvemos al `ContentView.swift`:
-Se llamaria al `StarCardVM.swift` y de hay se obtendrian los datos para mostrarlos por pantalla, siempre que se quiera se va a poder cambiar el StarCardVM con el parámetro dentro de desarrollo para que devuelva solo dichos datos en vez de los de defecto que son los de producción. Tanto en el simulador como en la Preview.
+Se llamaría al `StarCardVM.swift` y de hay se obtendrian los datos para mostrarlos por pantalla, siempre que se quiera se va a poder cambiar el StarCardVM con el parámetro dentro de desarrollo para que devuelva solo dichos datos en vez de los de defecto que son los de producción. Tanto en el simulador como en la Preview.
 
 6. Le damos a la primera carpeta principal de todas `StarWarsDemo` (el cual es el ejecutable de nuestra aplicación) y hay vemos que es un `Target`, lo que vamos a hacer es crear otro `Target` que al pulsar crear ese nuevo `Target` donde tendremos que seleccionar `iOS` y luego un `Unit Testing Bundle` para hacer el testing llamado: `StarWarsDemoTest`.
 Aqui esta el testing de la aplicación.
